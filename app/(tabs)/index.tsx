@@ -6,7 +6,7 @@ export default function HomeScreen() {
   return (
     <View style={styles.titleContainer}>
       <View>
-      <Text style={{color: "white"}} >Bienvenido a compumundohipermegared</Text>
+      <Text style={{color: "white"}} >Bienvenido</Text>
       </View>
     </View>
   );

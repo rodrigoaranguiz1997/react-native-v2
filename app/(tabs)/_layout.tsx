@@ -17,9 +17,9 @@ export default function TabsLayout() {
   useEffect(() => {
     const redirectToLogin = setTimeout(() => {
       if (!isAuthenticated) {
-        router.replace('/login'); // Asegúrate de que la ruta sea la correcta
+        router.replace('/login');
       }
-    }, 100); // Pequeño retraso para esperar a que se monte el layout
+    }, 100);
 
     return () => clearTimeout(redirectToLogin);
   }, [isAuthenticated]);
@@ -33,7 +33,6 @@ export default function TabsLayout() {
         headerShown: false,
         tabBarStyle: Platform.select({
           ios: {
-            // Use a transparent background on iOS to show the blur effect
             position: 'absolute',
           },
           default: {},
