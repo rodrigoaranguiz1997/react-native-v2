@@ -22,11 +22,8 @@ export default function TabsLayout() {
     }, 100);
 
     return () => clearTimeout(redirectToLogin);
-  }, [isAuthenticated]);
+  }, [isAuthenticated, router]);
 
-  
-
-  
   return (
     <Tabs
       screenOptions={{
