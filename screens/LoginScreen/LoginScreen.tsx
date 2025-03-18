@@ -61,7 +61,7 @@ export default function LoginScreen() {
         control={control}
         name="email"
         render={({ field }) => (
-          <TextInput style={styles.input} placeholder="Email" onChangeText={field.onChange} value={field.value} />
+          <TextInput style={styles.input} placeholder="Email" placeholderTextColor={"white"} onChangeText={field.onChange} value={field.value} />
         )}
       />
       {errors.email && <Text style={styles.errorInputMsg}>{errors.email.message}</Text>}
@@ -70,7 +70,7 @@ export default function LoginScreen() {
         control={control}
         name="password"
         render={({ field }) => (
-          <TextInput style={styles.input} placeholder="Password" secureTextEntry onChangeText={field.onChange} value={field.value} />
+          <TextInput style={styles.input} placeholder="Password"  placeholderTextColor={"white"} secureTextEntry onChangeText={field.onChange} value={field.value} />
         )}
       />
       {errors.password && <Text style={styles.errorInputMsg}>{errors.password.message}</Text>}

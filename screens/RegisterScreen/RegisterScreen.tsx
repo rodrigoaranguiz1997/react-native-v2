@@ -51,7 +51,7 @@ export default function RegisterScreen() {
         control={control}
         name="email"
         render={({ field }) => (
-          <TextInput style={styles.input} placeholder="Email" onChangeText={field.onChange} value={field.value} />
+          <TextInput placeholderTextColor={"white"} style={styles.input} placeholder="Email" onChangeText={field.onChange} value={field.value} />
         )}
       />
       {errors.email && <Text style={styles.errorInputMsg}>{errors.email.message}</Text>}
@@ -60,7 +60,7 @@ export default function RegisterScreen() {
         control={control}
         name="password"
         render={({ field }) => (
-          <TextInput style={styles.input} placeholder="Password" secureTextEntry onChangeText={field.onChange} value={field.value} />
+          <TextInput style={styles.input} placeholder="Password" placeholderTextColor={"white"} secureTextEntry onChangeText={field.onChange} value={field.value} />
         )}
       />
       {errors.password && <Text style={styles.errorInputMsg}>{errors.password.message}</Text>}
@@ -69,7 +69,7 @@ export default function RegisterScreen() {
         control={control}
         name="confirmPassword"
         render={({ field }) => (
-          <TextInput style={styles.input} placeholder="Confirm Password" secureTextEntry onChangeText={field.onChange} value={field.value} />
+          <TextInput style={styles.input} placeholder="Confirmar Password"  placeholderTextColor={"white"} secureTextEntry onChangeText={field.onChange} value={field.value} />
         )}
       />
       {errors.confirmPassword && <Text style={styles.errorInputMsg}>{errors.confirmPassword.message}</Text>}
