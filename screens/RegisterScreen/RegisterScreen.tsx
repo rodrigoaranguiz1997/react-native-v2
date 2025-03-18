@@ -38,7 +38,7 @@ export default function RegisterScreen() {
       await AsyncStorage.setItem("registeredUsers", JSON.stringify(users));
 
       Alert.alert("Éxito", "Usuario registrado correctamente");
-      router.replace('/login'); // Redirigir al login
+      router.replace('/login');
     } catch (error) {
       console.error("Error al registrar usuario:", error);
     }

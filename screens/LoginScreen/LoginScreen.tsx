@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 20
   },
   button: {
-    backgroundColor: "#4CAF50",  // Color verde
+    backgroundColor: "#4CAF50", 
     padding: 15,
     borderRadius: 10,
     alignItems: "center",
